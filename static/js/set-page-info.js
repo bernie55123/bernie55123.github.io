@@ -14,7 +14,7 @@ function setInfoEid() {
     data:  dataJSON,
     success: function(returnData) {
        const obj = JSON.parse(returnData);
-       // Set balance
+       setLocalStorage("balance", obj);
        var balance = document.getElementById("balance");
        balance.innerHTML = obj;
     },
@@ -260,5 +260,12 @@ function setPageInfo() {
       var repos_verified_tasks = get_verified_tasks();
       var list_verified_tasks = repos_verified_tasks.uuid;
       addVerifiedTable(list_verified_tasks);
+    } else if (page == "verified-cms-modify.html") {
+      set_page_info_verifier_cms_content();
+    } else if (page == "trade.html") {
+      setLocalStorage("balance",get_balance())
+      var balance = getLocalStorage("balance")
+      var money = document.getElementById("money")
+      money.innerHTML = balance
     }
 }
