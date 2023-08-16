@@ -9,10 +9,9 @@ doneBtn.addEventListener("click", function () {
   var cover = getLocalStorage("task_cover");//`${TASK_COVER}`;
 
   
-  form.append("uuid", uuid);
+  
   form.append("email", email);
   form.append("balance", balance);
-  form.append("type", type);
   form.append("name", name);
   form.append("token", token);
   form.append("overview", overview);
