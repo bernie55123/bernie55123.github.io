@@ -18,7 +18,7 @@ doneBtn.addEventListener("click", function () {
   form.append("cover", cover);
 
   let settings = {
-    "url": `http://bernie3305730.ddns.net`,
+    "url": `https://bernie3305730.ddns.net`,
     "method": "POST",
     "timeout": 0,
     "processData": false,
