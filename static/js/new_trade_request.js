@@ -18,13 +18,17 @@ doneBtn.addEventListener("click", function () {
   form.append("cover", cover);
 
   let settings = {
-    "url": `https://127.0.0.1:8000/`,
+    "url": `http://127.0.0.1:8000/`,
     "method": "POST",
     "timeout": 0,
     "processData": false,
     "mimeType": "multipart/form-data",
     "contentType": false,
-    "data": form
+    "data": form,
+    "headers": {
+      "X-Requested-With": "XMLHttpRequest",
+      "X-CSRFToken": "ggg6FdEdqKx3tCKBJrXcpHDZ0Of3XhzS",  // 使用getCookie函數獲取CSRF標記值
+    }
   };
 
   $.ajax(settings).done(function (res) {
