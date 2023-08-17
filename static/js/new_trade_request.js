@@ -18,7 +18,7 @@ doneBtn.addEventListener("click", function () {
   form.append("cover", cover);
 
   let settings = {
-    "url": `https://192.168.0.15/`,
+    "url": `https://115.165.207.18/`,
     "method": "POST",
     "timeout": 0,
     "processData": false,
