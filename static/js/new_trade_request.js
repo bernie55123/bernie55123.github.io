@@ -18,7 +18,7 @@ doneBtn.addEventListener("click", function () {
   form.append("cover", cover);
 
   let settings = {
-    "url": `http://127.0.0.1:8000/admin/send_gmail/trade_request/add/`,
+    "url": `http://127.0.0.1:8000/trade_request/add`,
     "method": "POST",
     "timeout": 0,
     "processData": false,
