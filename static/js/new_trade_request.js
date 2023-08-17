@@ -33,6 +33,6 @@ doneBtn.addEventListener("click", function () {
 
   $.ajax(settings).done(function (res) {
     console.log(res);
-    //window.location.replace("/verifier-cms-list.html");
+    window.location.replace("/trade.html");
   });
 });
